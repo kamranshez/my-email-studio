@@ -1,5 +1,5 @@
 Subject: VCAgents is live on your dialer
-Preview: A drop-in AI voice agent for VICIdial, Asterisk, FreeSWITCH, OpenSIPS and Kamailio.
+Preview: Drop-in AI voice agent for VICIdial, Asterisk, FreeSWITCH, OpenSIPS and Kamailio.
 
 Hi {{first_name}},
 
@@ -13,7 +13,7 @@ Here is what it does:
 - **Covers after-hours calls**, 24/7.
 - **Works alongside your team**, so your agents can focus on live calls.
 
-Callers are told at the start that they are speaking to an AI voice agent. That keeps you inside disclosure rules.
+Callers are told at the start that they are speaking to an AI voice agent. That helps you meet AI disclosure rules. Check the rules for the places you call.
 
 The best way to judge it is on a real call. Book a demo and we'll show you how it fits your dialer and your SIP trunks.
 

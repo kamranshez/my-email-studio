@@ -7,7 +7,7 @@ Since launch, a few questions keep coming up. Here are straight answers.
 
 **Will callers know they're talking to AI?**
 
-Yes. Every call starts with a short line that tells the caller they're speaking to an AI voice agent. We think that's right, and it keeps you inside disclosure rules.
+Yes. Every call starts with a short line that tells the caller they're speaking to an AI voice agent. We think that's right, and it helps you meet AI disclosure rules where you call.
 
 **How does it sound on a real call?**
 
@@ -15,7 +15,7 @@ Don't take our word for it. On a demo you can hear it handle a live call on your
 
 **How many concurrent calls can it handle?**
 
-You set the number of concurrent calls you need. Use more at peak times and fewer when it's quiet. It runs on our SIP trunks or yours. We'll confirm the right level for your volume on the demo.
+You choose the number of concurrent calls you need. It runs on our SIP trunks or yours. We'll confirm the right level for your volume on the demo.
 
 **What does it cost?**
 
