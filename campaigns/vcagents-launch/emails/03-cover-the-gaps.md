@@ -3,7 +3,7 @@ Preview: After 6 pm, peak-time overflow and client spikes. Here is how VCAgents 
 
 Hi {{first_name}},
 
-Most call centers don't lose calls in the middle of a quiet Tuesday. They lose them **after hours and at peak times**, when every agent is already on a call.
+Missed calls pile up **after hours and at peak times**, when every agent is already on a call.
 
 That's the gap VCAgents covers. Here is how it looks for each kind of team on our waitlist.
 
@@ -17,7 +17,7 @@ Offer AI voice agents alongside the SIP trunks you already sell. It works with A
 
 **If you run BPO campaigns**
 
-Cover call spikes across every client campaign, 24/7. Set the number of concurrent calls each campaign needs, within your plan. We'll size it with you on a demo. Run it on our SIP trunks or yours.
+Cover call spikes across every client campaign, 24/7. Set the number of concurrent calls (calls at the same time) each campaign needs, within your plan. We'll size it with you on a demo. Run it on our SIP trunks (the lines your calls run over) or yours.
 
 In every case, VCAgents works alongside your team. It handles overflow and covers after-hours, so your agents can focus where they're needed most.
 

@@ -5,7 +5,7 @@ Hi {{first_name}},
 
 You joined our waitlist. Today VCAgents is live.
 
-VCAgents is a **drop-in AI voice agent for your dialer**. It works with VICIdial, Asterisk, FreeSWITCH, OpenSIPS and Kamailio. You keep the phone system you already run.
+VCAgents is a **drop-in AI voice agent for your dialer or PBX**. It works with VICIdial, Asterisk, FreeSWITCH, OpenSIPS and Kamailio. You keep the phone system you already run.
 
 Here is what it does:
 
@@ -15,11 +15,11 @@ Here is what it does:
 
 Callers are told at the start that they are speaking to an AI voice agent. That helps you meet AI disclosure rules. Check the rules for the places you call.
 
-The best way to judge it is on a real call. Book a demo and we'll show you how it fits your dialer and your SIP trunks.
+The best way to judge it is on a real call. Book a demo and we'll show you how it fits your dialer and your SIP trunks (the lines your calls run over).
 
 [Book a demo](https://vcagents.example/vcagents)
 
-One quick ask: hit reply and tell us which dialer you run and roughly how many calls you take a day. We read every reply.
+Quick question: which dialer do you run, and about how many calls a day? Just hit reply.
 
 Talk soon,
 The VCAgents Team

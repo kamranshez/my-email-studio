@@ -12,6 +12,7 @@ Each email file must:
 1. **Start with the subject and preview.**
    - Line 1: `Subject: ...` of 50 characters or fewer.
    - Line 2: `Preview: ...` of 90 characters or fewer.
+   - Count the whole line, including `Subject: ` or `Preview: `.
 2. **Greet the reader by name** using `{{first_name}}`, for example "Hi {{first_name}},".
 3. **Have exactly one main link**, written like this:
    `[Button text](https://vcagents.example/vcagents)`

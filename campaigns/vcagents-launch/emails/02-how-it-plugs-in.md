@@ -3,15 +3,15 @@ Preview: The setup in plain steps, plus Asterisk, FreeSWITCH, OpenSIPS and Kamai
 
 Hi {{first_name}},
 
-The first question we get is always the same: "How hard is it to set up?"
+A question we hear a lot: "How hard is it to set up?"
 
 Here is the short answer. **VCAgents connects over SIP**, the same way your dialer already talks to a SIP trunk. You don't swap out your phone system. You add VCAgents as one more place to send calls.
 
 **On VICIdial**
 
 1. Add VCAgents as a SIP carrier.
-2. Point an in-group's overflow or after-hours route at it.
-3. Make a test call and check it in your usual reports.
+2. Point the in-group's After Hours Action or Drop Action at it.
+3. Make a test call and check the call log.
 
 **On Asterisk or FreeSWITCH**
 
