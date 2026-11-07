@@ -1,0 +1,25 @@
+first_name,last_name,email,group,joined_on,consent
+Ayesha,Khan,ayesha.khan@example.com,call-center-owners,2026-09-03,waitlist form
+Marcus,Reyes,marcus.reyes@example.com,call-center-owners,2026-09-08,waitlist form
+Priya,Nair,priya.nair@example.com,call-center-owners,2026-09-12,waitlist form
+Daniel,Okafor,daniel.okafor@example.com,call-center-owners,2026-09-17,waitlist form
+Sofia,Marino,sofia.marino@example.com,call-center-owners,2026-09-23,waitlist form
+Bilal,Siddiqui,bilal.siddiqui@example.com,call-center-owners,2026-09-29,waitlist form
+Hannah,Fischer,hannah.fischer@example.com,call-center-owners,2026-10-06,waitlist form
+Carlos,Mendes,carlos.mendes@example.com,call-center-owners,2026-10-14,waitlist form
+Tom,Becker,tom.becker@example.com,voip-sip-providers,2026-09-05,waitlist form
+Elena,Petrova,elena.petrova@example.com,voip-sip-providers,2026-09-10,waitlist form
+Omar,Haddad,omar.haddad@example.com,voip-sip-providers,2026-09-15,waitlist form
+Grace,Liu,grace.liu@example.com,voip-sip-providers,2026-09-21,waitlist form
+Javier,Torres,javier.torres@example.com,voip-sip-providers,2026-09-26,waitlist form
+Nadia,Rahman,nadia.rahman@example.com,voip-sip-providers,2026-10-02,waitlist form
+Lukas,Novak,lukas.novak@example.com,voip-sip-providers,2026-10-09,waitlist form
+Fatima,Malik,fatima.malik@example.com,voip-sip-providers,2026-10-18,waitlist form
+Chloe,Martin,chloe.martin@example.com,digital-marketers,2026-09-04,waitlist form
+Ravi,Patel,ravi.patel@example.com,digital-marketers,2026-09-09,waitlist form
+Zara,Hussain,zara.hussain@example.com,digital-marketers,2026-09-14,waitlist form
+Ethan,Brooks,ethan.brooks@example.com,digital-marketers,2026-09-19,waitlist form
+Mei,Tanaka,mei.tanaka@example.com,digital-marketers,2026-09-25,waitlist form
+Kwame,Mensah,kwame.mensah@example.com,digital-marketers,2026-10-01,waitlist form
+Isabel,Costa,isabel.costa@example.com,digital-marketers,2026-10-11,waitlist form
+Noah,Schmidt,noah.schmidt@example.com,digital-marketers,2026-10-22,waitlist form
