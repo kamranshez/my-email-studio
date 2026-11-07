@@ -63,13 +63,17 @@ Each version changes only two things: the opening line and one example. Everythi
 
 The studio sends test emails through Resend. It works on Windows, macOS and Linux. You need [Node.js](https://nodejs.org) 18 or newer, because both the Resend server and the send guard run on Node.
 
-Your personal settings live in `.claude/settings.local.json`. Git ignores this file, so your email address and API key are never committed. To make it, copy the sample:
+Your personal settings go in a `.env` file in the project folder. Git ignores it, so your email address and API key are never committed. To make it, copy the sample:
 
 ```bash
-cp .claude/settings.local.example.json .claude/settings.local.json
+cp .env.example .env
 ```
 
 Then fill in your own values and restart Claude Code.
+
+You can use `.claude/settings.local.json` instead (copy `.claude/settings.local.example.json`). It is also git-ignored. If a setting is in both files, `settings.local.json` wins.
+
+`.mcp.json` starts Resend through `.claude/mcp/resend.mjs`. That script reads your `.env` file, fills in practice-mode defaults for anything missing, and then starts the Resend server.
 
 | Setting | What it does |
 |---|---|
@@ -86,7 +90,7 @@ Until you verify your own sending domain in Resend, emails come from `onboarding
 
 ### The send guard
 
-`.claude/hooks/send-guard.mjs` checks every Resend tool call before it runs. It blocks sends to anyone except `@resend.dev` addresses and `MY_EMAIL`. It also always blocks broadcasts and automations. If `MY_EMAIL` is not set, only `@resend.dev` addresses are allowed.
+`.claude/hooks/send-guard.mjs` checks every Resend tool call before it runs. It blocks sends to anyone except `@resend.dev` addresses and `MY_EMAIL`. It also always blocks broadcasts and automations. It reads `MY_EMAIL` from your `.env` file or `settings.local.json`. If `MY_EMAIL` is not set, only `@resend.dev` addresses are allowed.
 
 ## Studio rules
 

@@ -1,6 +1,14 @@
 // PreToolUse hook: blocks Resend sends to anyone except @resend.dev test
 // addresses and my own email (from the MY_EMAIL environment variable).
 // Exit 0 = allow. Exit 2 = block (the reason on stderr is shown to Claude).
+// MY_EMAIL can also come from the project's .env file.
+
+// If the loader is missing or broken, carry on without it: MY_EMAIL then
+// stays unset and only @resend.dev addresses are allowed, which is safe.
+try {
+  const { loadEnv } = await import("../load-env.mjs");
+  loadEnv();
+} catch {}
 
 const ALWAYS_BLOCK = new Set([
   "send-broadcast",
