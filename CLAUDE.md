@@ -14,7 +14,11 @@ the folders below.
 ## Rules
 
 1. **Write in plain English.** Short sentences, everyday words, no jargon.
-2. **Never send email to real people.** We only plan and draft here. Do not send, schedule, or forward any email.
+2. **Never send email to real people.** We mostly plan and draft here. Do not send, schedule, or forward email to anyone in our leads or to any other real person.
+   - **The one exception: Resend practice sends.** You may send through Resend (the `resend` server in `.mcp.json`) only to:
+     - Resend's test addresses, which end in `@resend.dev` (for example `delivered@resend.dev`).
+     - My own email address: kamranshez@gmail.com.
+   - Any other address is off limits. A guard added in the next step will block sends to anyone else.
 3. **Ask me before deleting anything.** Always check with me first, even for a single file.
 
 ## Brand voice
