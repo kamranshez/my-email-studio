@@ -16,3 +16,7 @@ the folders below.
 1. **Write in plain English.** Short sentences, everyday words, no jargon.
 2. **Never send email to real people.** We only plan and draft here. Do not send, schedule, or forward any email.
 3. **Ask me before deleting anything.** Always check with me first, even for a single file.
+
+## Brand voice
+
+@brand/voice.md
