@@ -91,7 +91,7 @@ Week 1 is the launch. Weeks 3 and 4 fall over Christmas and New Year, so we send
 | Wk 2 (Thu 17 Dec) | **Email 4: questions answered** | Email, all | Disclosure, call quality, concurrent calls, pricing. Calm tone. | Not started |
 | **Wk 3** (Mon 21 Dec) | **Email 5: "Book a slot for January"** | Email, non-bookers only | Low-pressure. Offers demo slots from 4 Jan. | Not started |
 | Wk 3–4 | No sends over 24 Dec to 1 Jan | — | Holiday quiet period | — |
-| **Wk 4** (Sat 2 Jan) | Draft only: **Email 6: last call** | Email, non-bookers only | Ready to send on Mon 4 Jan (see Risks) | Not started |
+| **Wk 4** (Sat 2 Jan) | **Email 6: last call** | Email, non-bookers only | Final calm reminder before the Sun 3 Jan deadline. Book now for a January demo slot. | Not started |
 
 **Order that matters:** booking page → list tagging → Email 1 → Email 3 needs group tags.
 
@@ -124,7 +124,7 @@ Week 1 is the launch. Weeks 3 and 4 fall over Christmas and New Year, so we send
 | Week 1 | 120 | 120 |
 | Week 2 | 120 | 240 |
 | Week 3 | 40 | 280 |
-| Week 4 | 20 (plus early-Jan bookings) | 300 |
+| Week 4 | 20 | 300 |
 
 **Other KPIs:**
 - Open rate per email (aim for 40%+ on a warm waitlist)
