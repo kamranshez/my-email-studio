@@ -1,8 +1,8 @@
 # VCAgents Brand Voice
 
-**Who we are:** VCAgents makes AI voice agents for call center marketing and support. They plug into open-source phone systems: VICIdial, Asterisk, FreeSWITCH, OpenSIPS and Kamailio.
+**Who we are:** VCAgents provides call center services and VoIP trunks, and makes AI voice agents for call center marketing and support. Our agents plug into open-source phone systems: VICIdial, Asterisk, FreeSWITCH, OpenSIPS and Kamailio.
 
-**Who we write to:** Call center owners, and VoIP or SIP trunk providers who run dialers and PBX services. They know telephony well. They want facts, not hype.
+**Who we write to:** Call center owners, BPO managers, and VoIP or SIP trunk providers who run dialers and PBX services. They know telephony well. They want facts, not hype.
 
 ## 1. Our voice in three words
 

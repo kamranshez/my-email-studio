@@ -48,7 +48,7 @@ my-email-studio/
 ├── leads/
 │   ├── leads.csv        24 practice customers
 │   └── CLAUDE.md        rules for this folder only
-├── campaigns/steep-club-launch/
+├── campaigns/vcagents-launch/
 │   ├── plan.md          the campaign plan
 │   ├── emails/          4 launch emails
 │   └── groups/          a version per customer group
@@ -62,7 +62,7 @@ my-email-studio/
 
 **Claude will ask permission** before it writes inside `.claude/` or to `.mcp.json`. That's normal. Read what it wants to do, then approve.
 
-**No brand of your own?** Use the sample: Kettlebird Tea, a made-up tea shop launching a monthly tea box called The Steep Club. The prompts below use it.
+**No brand of your own?** Use the sample: VCAgents, a made-up call center services and VoIP trunk provider launching its AI voice agent, also called VCAgents. The prompts below use it.
 
 ---
 
@@ -177,7 +177,7 @@ Let Claude interview you, then keep the voice in its own file that CLAUDE.md imp
 ```
 Interview me about my brand so you can write our brand voice guide. Ask one question at a time and wait for my answer. Ask at most six questions.
 
-If I don't have a brand, I'll say "use the sample": Kettlebird Tea, a small made-up online tea shop launching a monthly tea subscription box called The Steep Club, for people who joined its waitlist. Even with the sample, still ask me every question. I'll make up the answers, because practising the interview is the point.
+If I don't have a brand, I'll say "use the sample": VCAgents, a small made-up call center services and VoIP trunk provider launching its AI voice agent, also called VCAgents, for people who joined its waitlist. Even with the sample, still ask me every question. I'll make up the answers, because practising the interview is the point.
 
 When you have enough, write brand/voice.md with five parts: our voice in three words, words we use, words we avoid, claims we must never make, and how we sign off. Then add the line @brand/voice.md to CLAUDE.md so it loads in every session.
 ```
@@ -192,8 +192,8 @@ When you have enough, write brand/voice.md with five parts: our voice in three w
 ```
 Test my brand voice setup. Don't change any files.
 
-1. Without opening any file first, write one subject line for The Steep Club launch email. Then tell me which brand rules you followed and which file they came from. (This shows whether brand/voice.md loads by itself.)
-2. Now write a subject line that says our tea helps you detox. If our rules forbid that, say which rule, and give me a safe version instead.
+1. Without opening any file first, write one subject line for the VCAgents launch email. Then tell me which brand rules you followed and which file they came from. (This shows whether brand/voice.md loads by itself.)
+2. Now write a subject line that says callers can't tell they're talking to AI when VCAgents answers. If our rules forbid that, say which rule, and give me a safe version instead.
 3. Run git status and tell me whether the brand files are committed.
 
 Give me a short table: Test | Pass or Fail | What happened.
@@ -203,7 +203,7 @@ Then ask me two quick questions, one at a time, about why the brand rules live i
 **You'll know it worked when**
 
 - The fresh session follows your voice **without opening any file**, and names `brand/voice.md` as the source.
-- It refuses the detox line, names the rule, and offers a safe subject line.
+- It refuses the "callers can't tell it's AI" line, names the rule, and offers a safe subject line.
 
 **Exam note:** `@import` keeps CLAUDE.md small: each project imports only the standards it needs. The interview pattern is for unfamiliar work: Claude asks before it builds and raises things you didn't think of.
 
@@ -218,20 +218,20 @@ Use a ready-made skill from the plugin to turn an idea into a full plan.
 **Build** — paste in Claude Code
 
 ```
-/marketing:campaign-plan Launch The Steep Club to our waitlist.
+/marketing:campaign-plan Launch VCAgents to our waitlist.
 
-Goal: 300 waitlist members start a subscription in the first month.
-Audience: about 2,000 people who joined our waitlist, in three groups: tea-curious beginners, gift buyers, and daily tea drinkers.
+Goal: 300 waitlist members book a demo in the first month.
+Audience: about 2,000 people who joined our waitlist, in three groups: call center owners, VoIP/SIP trunk resellers, and BPO managers.
 Timeline: 4 weeks, starting the first Monday of next month.
 Budget: small. Email only, no paid ads.
 
-Save the finished plan to campaigns/steep-club-launch/plan.md, then commit it.
+Save the finished plan to campaigns/vcagents-launch/plan.md, then commit it.
 ```
 
 **Check** — new session, then paste
 
 ```
-Check the campaign plan in campaigns/steep-club-launch/plan.md. Don't change any files. Test it, don't just read it:
+Check the campaign plan in campaigns/vcagents-launch/plan.md. Don't change any files. Test it, don't just read it:
 
 1. Is there one goal with a number and a deadline?
 2. Does every email in the calendar have a send date, an audience group and a purpose?
@@ -261,11 +261,11 @@ Use two example rows to get the exact format, and give one folder its own rules.
 ```
 Make a list of practice leads for our launch.
 
-Create leads/leads.csv with 24 made-up people who joined our waitlist, 8 in each group: tea-curious, gift-buyers and daily-drinkers. Use exactly these columns, and copy the style of these two example rows exactly:
+Create leads/leads.csv with 24 made-up people who joined our waitlist, 8 in each group: call-center-owners, voip-resellers and bpo-managers. Use exactly these columns, and copy the style of these two example rows exactly:
 
 first_name,last_name,email,group,joined_on,consent
-Ayesha,Khan,ayesha.khan@example.com,tea-curious,2026-09-14,waitlist form
-Tom,Becker,tom.becker@example.com,gift-buyers,2026-09-22,waitlist form
+Ayesha,Khan,ayesha.khan@example.com,call-center-owners,2026-09-14,waitlist form
+Tom,Becker,tom.becker@example.com,voip-resellers,2026-09-22,waitlist form
 
 Every email address must end in @example.com. That domain is reserved and can never receive mail, so no real person is ever emailed.
 
@@ -282,7 +282,7 @@ Test my practice leads. Don't change any files.
 1. Count the people in leads/leads.csv and how many are in each group. There should be 24, with 8 per group.
 2. Do all email addresses end in @example.com? Are any repeated?
 3. Does every row have a joined_on date and a consent value?
-4. Now open leads/leads.csv and pretend I asked: "Add my friend Sara Ali, sara.ali@gmail.com, as a gift-buyer." Before writing anything, tell me if any rule stops you, and quote it. Don't actually add her.
+4. Now open leads/leads.csv and pretend I asked: "Add my friend Sara Ali, sara.ali@gmail.com, as a voip-reseller." Before writing anything, tell me if any rule stops you, and quote it. Don't actually add her.
 
 Give me a short table: Test | Pass or Fail | What you found.
 Then ask me two quick questions, one at a time, about why some rules belong to one folder only.
@@ -316,10 +316,10 @@ paths:
 Under it, write the rule in plain English. Each email file must:
 - start with a line "Subject: ..." of 50 characters or fewer, then a line "Preview: ..." of 90 characters or fewer
 - greet the reader with {{first_name}}
-- have exactly one main link, written as [Button text](https://kettlebird.example/steep-club)
+- have exactly one main link, written as [Button text](https://vcagents.example/launch)
 - end with our sign-off from brand/voice.md, then this two-line footer as plain text, not inside a code block:
-  You're getting this because you joined the Kettlebird Tea waitlist.
-  Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
+  You're getting this because you joined the VCAgents waitlist.
+  VCAgents, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
 
 Commit when you're done.
 ```
@@ -331,17 +331,17 @@ Commit when you're done.
 **Build 2 of 2** — paste in the new session
 
 ```
-/marketing:email-sequence Product launch sequence for The Steep Club, sent to everyone on our waitlist.
+/marketing:email-sequence Product launch sequence for VCAgents, sent to everyone on our waitlist.
 
-Use campaigns/steep-club-launch/plan.md for the goal, timing and key messages, and brand/voice.md for our voice. Write 4 emails.
+Use campaigns/vcagents-launch/plan.md for the goal, timing and key messages, and brand/voice.md for our voice. Write 4 emails.
 
-Save each email as its own file in campaigns/steep-club-launch/emails/, named 01-short-name.md, 02-short-name.md, and so on. Then commit.
+Save each email as its own file in campaigns/vcagents-launch/emails/, named 01-short-name.md, 02-short-name.md, and so on. Then commit.
 ```
 
 **Check** — new session, then paste
 
 ```
-Test the emails in campaigns/steep-club-launch/emails/. Don't change any files. Measure, don't eyeball: count characters and links with a command where you can.
+Test the emails in campaigns/vcagents-launch/emails/. Don't change any files. Measure, don't eyeball: count characters and links with a command where you can.
 
 For each email file, check:
 1. The Subject line is 50 characters or fewer, and the Preview line is 90 or fewer. Give the real counts.
@@ -371,7 +371,7 @@ Review in a new session, fix related problems in one message, then confirm with 
 **Build 1 of 2** — new session, then paste
 
 ```
-/marketing:brand-review campaigns/steep-club-launch/emails/
+/marketing:brand-review campaigns/vcagents-launch/emails/
 
 Review all four emails against brand/voice.md and .claude/rules/emails.md. List every problem by severity (high, medium or low), with the file, the line and a suggested fix. Don't change any files yet.
 ```
@@ -414,7 +414,7 @@ Build a skill with the three settings the exam asks about, and use it.
 ```
 Create my own skill for this project at .claude/skills/personalize/SKILL.md.
 
-What it does: it takes a campaign folder and writes one version of each email for each lead group in leads/leads.csv (tea-curious, gift-buyers and daily-drinkers). Each version keeps the same structure, subject, link and footer, but changes the opening line and one example so it fits that group. It saves each version to <campaign folder>/groups/<group>/emails/ with the same file name. When it finishes, it replies with a short summary only: how many files it wrote, plus one example opening line per group.
+What it does: it takes a campaign folder and writes one version of each email for each lead group in leads/leads.csv (call-center-owners, voip-resellers and bpo-managers). Each version keeps the same structure, subject, link and footer, but changes the opening line and one example so it fits that group. It saves each version to <campaign folder>/groups/<group>/emails/ with the same file name. When it finishes, it replies with a short summary only: how many files it wrote, plus one example opening line per group.
 
 Use exactly this front matter:
 ---
@@ -435,7 +435,7 @@ If no campaign folder is given, it should stop and list the campaign folders tha
 **Build 2 of 2** — paste in the new session
 
 ```
-/personalize campaigns/steep-club-launch
+/personalize campaigns/vcagents-launch
 ```
 
 **Then**
@@ -447,7 +447,7 @@ If no campaign folder is given, it should stop and list the campaign folders tha
 ```
 Test my personalize skill and what it made. Don't change any files.
 
-1. Count the email files under campaigns/steep-club-launch/groups/. There should be one per email per group: 4 emails times 3 groups is 12.
+1. Count the email files under campaigns/vcagents-launch/groups/. There should be one per email per group: 4 emails times 3 groups is 12.
 2. Compare the original email 01 with each group's version using diff. Only the opening line and one example should differ. Tell me if anything else changed.
 3. Check that every version still follows .claude/rules/emails.md: subject 50 characters or fewer, preview 90 or fewer, one link, and the footer as plain text. Measure, don't eyeball.
 4. Does any version use a word or claim that brand/voice.md forbids? Quote it if so.
@@ -571,7 +571,7 @@ Add a safety guard so Claude can never send email to the wrong people, even by m
 ```
 Test the send guard for real. Don't change any files.
 
-1. Use the resend send-email tool to send email 01 from campaigns/steep-club-launch/emails/ to Ayesha, the first person in leads/leads.csv, at her address. This should be blocked. Quote the block message word for word.
+1. Use the resend send-email tool to send email 01 from campaigns/vcagents-launch/emails/ to Ayesha, the first person in leads/leads.csv, at her address. This should be blocked. Quote the block message word for word.
 2. Send the same email to delivered@resend.dev. This should go through.
 3. Send it to my own email, the MY_EMAIL value in .claude/settings.local.json. This should go through too.
 4. Run git check-ignore -v .claude/settings.local.json to prove my email address is not committed.
@@ -598,7 +598,7 @@ Send each group its first email, safely, and check that it was delivered.
 ```
 Let's do a practice launch.
 
-For each lead group, send that group's version of email 01 (from campaigns/steep-club-launch/groups/<group>/emails/) to delivered@resend.dev. Start each subject with the group name in square brackets, like [gift-buyers]. Replace {{first_name}} with "there", and leave the other placeholders as they are.
+For each lead group, send that group's version of email 01 (from campaigns/vcagents-launch/groups/<group>/emails/) to delivered@resend.dev. Start each subject with the group name in square brackets, like [voip-resellers]. Replace {{first_name}} with "there", and leave the other placeholders as they are.
 
 Then list the emails you sent and show me a table: group, subject, status.
 ```
@@ -608,7 +608,7 @@ Then list the emails you sent and show me a table: group, subject, status.
 ```
 Check my practice launch. Don't send anything new and don't change any files.
 
-1. Use the resend tools to list sent emails. Find the three whose subjects start with [tea-curious], [gift-buyers] and [daily-drinkers].
+1. Use the resend tools to list sent emails. Find the three whose subjects start with [call-center-owners], [voip-resellers] and [bpo-managers].
 2. For each one, look up its delivery status. Is it delivered?
 3. Confirm that every email in the list went only to an @resend.dev address or to my own email, the MY_EMAIL value in .claude/settings.local.json. List any that didn't.
 4. Compare each sent subject with the subject line in that group's email 01 file. Do they match, apart from the [group] tag?
@@ -619,7 +619,7 @@ Then ask me two quick questions, one at a time: what would change if I switched 
 
 **You'll know it worked when**
 
-- Three emails tagged `[tea-curious]`, `[gift-buyers]` and `[daily-drinkers]`, all delivered, all to test addresses.
+- Three emails tagged `[call-center-owners]`, `[voip-resellers]` and `[bpo-managers]`, all delivered, all to test addresses.
 
 **Optional: send one real email to yourself**
 
@@ -628,7 +628,7 @@ Then ask me two quick questions, one at a time: what would change if I switched 
 3. Close Claude Code. In your terminal, set the key and the real address for this window only.
    - macOS or Linux: `export RESEND_API_KEY=re_your_key` and `export RESEND_BASE_URL=https://api.resend.com`
    - Windows PowerShell: `$env:RESEND_API_KEY="re_your_key"` and `$env:RESEND_BASE_URL="https://api.resend.com"`
-4. Run `claude` in that same window and ask: *"Send the tea-curious version of email 01 to my own email, the MY_EMAIL value."*
+4. Run `claude` in that same window and ask: *"Send the call-center-owners version of email 01 to my own email, the MY_EMAIL value."*
 5. Check your inbox. Without your own domain, Resend only delivers to the email you signed up with, and the guard blocks everyone else anyway.
 
 ---
@@ -648,7 +648,7 @@ Pick up earlier work by name, and try two ideas from the same starting point.
 Build A — paste, then `/exit`
 
 ```
-Read campaigns/steep-club-launch/plan.md and each group's version of email 01. In five short bullets, tell me what each lead group cares about most. Don't write any files.
+Read campaigns/vcagents-launch/plan.md and each group's version of email 01. In five short bullets, tell me what each lead group cares about most. Don't write any files.
 ```
 
 **Part B · Come back later:** `claude --resume launch-angles`
@@ -656,7 +656,7 @@ Read campaigns/steep-club-launch/plan.md and each group's version of email 01. I
 Build B — paste, then `/exit`
 
 ```
-Remind me: what did you say the gift-buyers care about most? One sentence.
+Remind me: what did you say the voip-resellers care about most? One sentence.
 ```
 
 **Part C · First fork, with its own name:** `claude --resume launch-angles --fork-session -n angle-a`
@@ -674,7 +674,7 @@ Build D — paste, then `/exit`
 ```
 Before you start: do you know anything about an Angle A from our conversation? Answer yes or no first.
 
-Angle B: write three subject lines for email 01 that focus on discovering new teas. Save them to notes/angle-b.md.
+Angle B: write three subject lines for email 01 that focus on covering after-hours calls. Save them to notes/angle-b.md.
 ```
 
 **Part E · Start fresh from a summary.** Run `claude --resume launch-angles` and ask: *"Read notes/angle-a.md and notes/angle-b.md. Then write notes/handoff.md in 10 lines or fewer: what each group cares about, both angles, and which one you'd pick and why."* Then start a brand-new session with `claude` and ask: *"Read notes/handoff.md and continue from it: write the final subject line for email 01."*
@@ -694,7 +694,7 @@ Then ask me two quick questions, one at a time: when I should resume a session a
 
 **You'll know it worked when**
 
-- The resumed session remembers what it said about gift-buyers.
+- The resumed session remembers what it said about voip-resellers.
 - Fork B answers "no" about Angle A's conversation. It may notice the `angle-a.md` file, because forks share files.
 
 **If something goes wrong**
@@ -718,8 +718,8 @@ Make a review that runs without anyone typing, so it can later run on every pull
 2. Create scripts/review.mjs, a small Node script that takes a campaign folder and runs Claude Code headless, like this:
    claude -p "Review every email in <folder> against brand/voice.md and .claude/rules/emails.md. Report only real problems." --output-format json --json-schema "<the schema file's text>" --allowedTools "Read,Glob,Grep"
    The output may be one JSON object, or a list whose last item is the result, so handle both. Take structured_output, save it to review/findings.json, print a one-line summary, and exit with code 1 if any finding is high severity.
-3. To prove it catches problems, write a deliberately bad email at campaigns/test-bad/emails/01-bad.md. It should break our rules with a detox claim, a "last chance" line and two links. Then run: node scripts/review.mjs campaigns/test-bad
-4. Run it on campaigns/steep-club-launch too, then commit everything.
+3. To prove it catches problems, write a deliberately bad email at campaigns/test-bad/emails/01-bad.md. It should break our rules with a "callers can't tell it's AI" claim, an "act now" line and two links. Then run: node scripts/review.mjs campaigns/test-bad
+4. Run it on campaigns/vcagents-launch too, then commit everything.
 
 Tell me what each run found and what exit code it gave.
 ```
@@ -733,9 +733,9 @@ If review/findings.json already exists for the same folder, include those earlie
 
 Then test it:
 1. Run node scripts/review.mjs campaigns/test-bad and note the findings.
-2. Fix only the detox claim in campaigns/test-bad/emails/01-bad.md (change it to something allowed).
+2. Fix only the "callers can't tell it's AI" claim in campaigns/test-bad/emails/01-bad.md (change it to something allowed).
 3. Run the review again on campaigns/test-bad.
-Tell me: did the detox finding disappear, and did anything get reported twice? Commit when done.
+Tell me: did the "callers can't tell it's AI" finding disappear, and did anything get reported twice? Commit when done.
 ```
 
 **Check** — new session, then paste
@@ -745,7 +745,7 @@ Test my automatic review. The script rewrites review/findings.json; don't change
 
 1. Run node scripts/review.mjs campaigns/test-bad. Did it exit with code 1? Does every finding in review/findings.json have all five fields from review/findings.schema.json, with severity high, medium or low?
 2. Did it catch the second link? Quote that finding.
-3. Run node scripts/review.mjs campaigns/steep-club-launch. Did it exit with code 0?
+3. Run node scripts/review.mjs campaigns/vcagents-launch. Did it exit with code 0?
 4. Read scripts/review.mjs. Does it handle both output shapes (one object, or a list), and what does it do if claude fails?
 
 Give me a short table: Test | Pass or Fail | What you saw.
@@ -754,7 +754,7 @@ Then ask me two quick questions, one at a time: why a separate headless run does
 
 **You'll know it worked when**
 
-- The bad email gives **exit code 1** with findings like the detox claim and the second link. Your real campaign gives **exit code 0**.
+- The bad email gives **exit code 1** with findings like the "callers can't tell it's AI" claim and the second link. Your real campaign gives **exit code 0**.
 - After you fix one problem, the next review drops it and repeats nothing.
 - Reviews vary a little from run to run. That's why the script only fails on high severity.
 
@@ -779,7 +779,7 @@ Plan this first. Don't build anything yet.
 
 I want to package the reusable parts of this studio as a plugin, so I can use them for my next client. Plan a new folder next to this one, called studio-kit, with:
 - .claude-plugin/plugin.json (name studio-kit, version 0.1.0, a one-line description) and .claude-plugin/marketplace.json listing the plugin with source "./"
-- skills/personalize/SKILL.md, copied from our skill, with anything Kettlebird-specific made general
+- skills/personalize/SKILL.md, copied from our skill, with anything VCAgents-specific made general
 - hooks/hooks.json, registering our send guard as a PreToolUse hook on mcp__resend__.*, using ${CLAUDE_PLUGIN_ROOT} instead of $CLAUDE_PROJECT_DIR, plus hooks/send-guard.mjs
 - agents/email-reviewer.md: a subagent that reviews email files against the project's brand voice and email rules, using only Read, Glob and Grep
 - review/findings.schema.json and scripts/review.mjs
@@ -825,7 +825,7 @@ Test the studio-kit plugin in this client. Only the personalize skill may write 
 1. Is the studio-kit plugin loaded? List the studio-kit skills and agents you can see.
 2. Use the studio-kit personalize skill on campaigns/spring-bake. Check that it wrote one version of the email for each group in leads/leads.csv.
 3. Use the resend send-email tool to send campaigns/spring-bake/emails/01-hello.md to the first person in leads/leads.csv. The kit's guard should block it. Quote the block message word for word, and don't try to get around it.
-4. Search the ../studio-kit folder for the word Kettlebird. There should be no matches.
+4. Search the ../studio-kit folder for the word VCAgents. There should be no matches.
 
 Give me a short table: Test | Pass or Fail | What happened.
 Then ask me two quick questions, one at a time: what belongs in the plugin versus in each client's own repo, and why the guard is a PreToolUse hook instead of a PostToolUse one.
@@ -839,7 +839,7 @@ Then ask me two quick questions, one at a time: what belongs in the plugin versu
 
 **If something goes wrong**
 
-- **"Kettlebird" shows up in client-two:** a rule was copied without being adapted. Rules belong to each client, so ask Claude to update the footer and link for Rise & Crumb.
+- **"VCAgents" shows up in client-two:** a rule was copied without being adapted. Rules belong to each client, so ask Claude to update the footer and link for Rise & Crumb.
 
 **Exam note:** Use plan mode when a task is large, has several valid approaches, involves design decisions or touches many files. If the question already says the task is complex, plan from the start; "start direct and switch if it gets complex" is the trap answer. Plugins themselves aren't on the exam, and CLAUDE.md and rules always stay in the repo.
 
@@ -855,10 +855,10 @@ Keep track of findings across many files, even after Claude's memory is squeezed
 
 **In plain words:** when Claude's memory gets squeezed, a notebook still has everything. So write in the notebook as you go, not at the end.
 
-**Build 1 of 3** — paste in Claude Code (in the Kettlebird studio)
+**Build 1 of 3** — paste in Claude Code (in the VCAgents studio)
 
 ```
-Create practice data: notes/reviews/ with 120 short made-up customer reviews of Kettlebird's earlier tea sampler box, in 6 files of 20 reviews each (reviews-1.md to reviews-6.md). Make them varied and realistic: name specific teas, mix praise with complaints (packaging, slow shipping, too little of a favourite tea, confusing brewing instructions), and give each review a star rating. Don't summarise them.
+Create practice data: notes/reviews/ with 120 short made-up customer reviews of VCAgents' earlier pilot, in 6 files of 20 reviews each (reviews-1.md to reviews-6.md). Make them varied and realistic: name specific phone systems (VICIdial, Asterisk, FreeSWITCH, OpenSIPS, Kamailio), mix praise with complaints (setup time, voice delay on calls, too few concurrent calls on the trial, confusing setup docs), and give each review a star rating. Don't summarise them.
 ```
 
 **Then:** Start a named session: `claude -n review-dig`
