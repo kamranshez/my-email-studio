@@ -6,7 +6,7 @@ It is built for **VCAgents**, a business that makes AI voice agents for call cen
 
 This project is part of the Email Studio Lab course. See [ASSIGNMENT.md](ASSIGNMENT.md) for all 15 steps.
 
-> **No real emails are sent from here.** We only plan and draft. All lead data is sample data.
+> **No emails go to real leads from here.** We plan and draft. Test sends can only go to Resend test addresses (`@resend.dev`) and your own email. All lead data is sample data.
 
 ## What's inside
 
@@ -58,6 +58,35 @@ In Claude Code, run:
 It reads the final emails, the lead groups, the brand voice and the email rules. Then it writes each new version to `campaigns/<campaign>/groups/<group>/emails/`.
 
 Each version changes only two things: the opening line and one example. Everything else stays the same.
+
+## Setting up Resend
+
+The studio sends test emails through Resend. It works on Windows, macOS and Linux. You need [Node.js](https://nodejs.org) 18 or newer, because both the Resend server and the send guard run on Node.
+
+Your personal settings live in `.claude/settings.local.json`. Git ignores this file, so your email address and API key are never committed. To make it, copy the sample:
+
+```bash
+cp .claude/settings.local.example.json .claude/settings.local.json
+```
+
+Then fill in your own values and restart Claude Code.
+
+| Setting | What it does |
+|---|---|
+| `MY_EMAIL` | Your own email. The send guard lets test emails go to this address. |
+| `RESEND_BASE_URL` | Where emails go. `https://api.resend.com` is your real Resend account. |
+| `RESEND_API_KEY` | Your key from the Resend dashboard (API Keys). Never put it in `.mcp.json`. |
+
+### Practice mode or live mode
+
+- **Practice mode:** delete the `RESEND_BASE_URL` and `RESEND_API_KEY` lines and keep only `MY_EMAIL`. Resend then uses the practice server at `http://localhost:4000` that `.mcp.json` points to, and no real mail leaves your computer.
+- **Live mode:** keep all three lines. Emails really go out, but the send guard still only allows `@resend.dev` test addresses and `MY_EMAIL`.
+
+Until you verify your own sending domain in Resend, emails come from `onboarding@resend.dev`. From that address, Resend only delivers to the email you signed up with.
+
+### The send guard
+
+`.claude/hooks/send-guard.mjs` checks every Resend tool call before it runs. It blocks sends to anyone except `@resend.dev` addresses and `MY_EMAIL`. It also always blocks broadcasts and automations. If `MY_EMAIL` is not set, only `@resend.dev` addresses are allowed.
 
 ## Studio rules
 
