@@ -5,7 +5,7 @@ Searched skills.sh on 2026-11-07 with `npx skills find` for "email marketing", "
 ## Use these
 
 **For writing campaigns: `anthropics/knowledge-work-plugins`** (35,048 stars, Apache-2.0)
-Anthropic publishes this one, and Anthropic makes Claude. It has both `campaign-plan` (3.4K installs) and `email-sequence` (3K installs), so one trusted source covers planning the Steep Club launch and drafting the emails. The repo was updated today.
+Anthropic publishes this one, and Anthropic makes Claude. It has both `campaign-plan` (3.4K installs) and `email-sequence` (3K installs), so one trusted source covers planning the VCAgents launch and drafting the emails. The repo was updated today.
 
 **For sending email: `resend/resend-skills`** (211 stars, MIT)
 Resend publishes this itself, and Resend is the service this studio sends through. The `resend` skill (24.3K installs) and `resend-cli` (13.9K) come straight from the company that runs the API, so they should match how it really works. The star count is low, but the publisher is the official one, and that matters more here. Resend's own `email-best-practices` (147 stars) is a possible extra later.
