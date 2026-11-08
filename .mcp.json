@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "resend": {
+      "command": "node",
+      "args": ["${CLAUDE_PROJECT_DIR:-.}/.claude/mcp/resend.mjs"]
+    }
+  }
+}

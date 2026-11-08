@@ -1,0 +1,7 @@
+{
+  "env": {
+    "MY_EMAIL": "you@example.com",
+    "RESEND_BASE_URL": "https://api.resend.com",
+    "RESEND_API_KEY": "re_your_real_key_here"
+  }
+}
